@@ -1,0 +1,1104 @@
+Statistical profiling result from isolate-0x5c84560-11737-v8.log, (5071 ticks, 10 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   3877   76.5%          /home/simon/.nvm/versions/node/v14.21.2/bin/node
+    149    2.9%          /usr/lib/x86_64-linux-gnu/libc.so.6
+      2    0.0%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+      1    0.0%          [vdso]
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     10    0.2%    1.0%  LazyCompile: *next /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:177:16
+      6    0.1%    0.6%  LazyCompile: *emit events.js:349:44
+      5    0.1%    0.5%  LazyCompile: *nextTick internal/process/task_queues.js:103:18
+      4    0.1%    0.4%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      4    0.1%    0.4%  LazyCompile: *resolve path.js:1067:10
+      4    0.1%    0.4%  LazyCompile: *processTicksAndRejections internal/process/task_queues.js:67:35
+      4    0.1%    0.4%  LazyCompile: *getEncodingOps buffer.js:694:24
+      3    0.1%    0.3%  LazyCompile: *trim_prefix /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:293:23
+      3    0.1%    0.3%  LazyCompile: *resolveNodeValue /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/Document-f89a2614.js:1176:26
+      2    0.0%    0.2%  RegExp: ^\/pays\/?(?=\/|$)
+      2    0.0%    0.2%  RegExp: ^\/notification\/?(?=\/|$)
+      2    0.0%    0.2%  RegExp: ^\/categorie\/?(?=\/|$)
+      2    0.0%    0.2%  RegExp: ^\/artiste\/?(?=\/|$)
+      2    0.0%    0.2%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      2    0.0%    0.2%  LazyCompile: *seekContent /home/simon/Bureau/SAE_FIMU/API/node_modules/doctrine/lib/doctrine.js:171:29
+      2    0.0%    0.2%  LazyCompile: *resolveBlockMapItems /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/Document-f89a2614.js:632:30
+      2    0.0%    0.2%  LazyCompile: *realpathSync fs.js:1723:22
+      2    0.0%    0.2%  LazyCompile: *parseProps /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/parse-3997f544.js:1806:13
+      2    0.0%    0.2%  LazyCompile: *normalizeString path.js:59:25
+      2    0.0%    0.2%  LazyCompile: *endOfLine /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/parse-3997f544.js:1172:19
+      2    0.0%    0.2%  LazyCompile: *baseMergeDeep /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash.mergewith/index.js:953:23
+      2    0.0%    0.2%  LazyCompile: *_storeHeader _http_outgoing.js:362:22
+      2    0.0%    0.2%  LazyCompile: *ParseContext /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/parse-3997f544.js:1735:14
+      1    0.0%    0.1%  RegExp: ^\/role\/?(?=\/|$)
+      1    0.0%    0.1%  RegExp: ^\/reseauxsociaux\/?(?=\/|$)
+      1    0.0%    0.1%  RegExp: ^(?:~|[Nn]ull|NULL)?$
+      1    0.0%    0.1%  RegExp: \.[^./]*$
+      1    0.0%    0.1%  RegExp: ;\s*charset\s*=
+      1    0.0%    0.1%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+      1    0.0%    0.1%  RegExp: (^"|"$)
+      1    0.0%    0.1%  LazyCompile: *writevGeneric internal/stream_base_commons.js:118:23
+      1    0.0%    0.1%  LazyCompile: *writeOrBuffer internal/streams/writable.js:334:23
+      1    0.0%    0.1%  LazyCompile: *toJS /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/stringifyNumber-dea1120c.js:26:14
+      1    0.0%    0.1%  LazyCompile: *set /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/application.js:359:23
+      1    0.0%    0.1%  LazyCompile: *send /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:111:25
+      1    0.0%    0.1%  LazyCompile: *resolveScalar /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/stringifyNumber-dea1120c.js:743:23
+      1    0.0%    0.1%  LazyCompile: *pushAsyncContext internal/async_hooks.js:527:26
+      1    0.0%    0.1%  LazyCompile: *parserOnHeadersComplete _http_common.js:76:33
+      1    0.0%    0.1%  LazyCompile: *parseTag /home/simon/Bureau/SAE_FIMU/API/node_modules/doctrine/lib/doctrine.js:776:26
+      1    0.0%    0.1%  LazyCompile: *get internal/streams/duplex.js:94:8
+      1    0.0%    0.1%  LazyCompile: *endOfWhiteSpace /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/_rollupPluginBabelHelpers-eed30217.js:315:25
+      1    0.0%    0.1%  LazyCompile: *dirname path.js:1247:10
+      1    0.0%    0.1%  LazyCompile: *applyHeaders /home/simon/Bureau/SAE_FIMU/API/node_modules/cors/lib/index.js:144:24
+      1    0.0%    0.1%  LazyCompile: *_addListener events.js:428:22
+      1    0.0%    0.1%  LazyCompile: *Writable.write internal/streams/writable.js:258:36
+      1    0.0%    0.1%  LazyCompile: *Readable.read internal/streams/readable.js:374:35
+      1    0.0%    0.1%  LazyCompile: *Module._nodeModulePaths internal/modules/cjs/loader.js:597:37
+      1    0.0%    0.1%  LazyCompile: *<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/parse-3997f544.js:1743:66
+
+ [C++]:
+   ticks  total  nonlib   name
+    604   11.9%   58.0%  epoll_pwait@@GLIBC_2.6
+     97    1.9%    9.3%  __write@@GLIBC_2.2.5
+     62    1.2%    6.0%  writev@@GLIBC_2.2.5
+     22    0.4%    2.1%  fwrite@@GLIBC_2.2.5
+     22    0.4%    2.1%  __read@@GLIBC_2.2.5
+     20    0.4%    1.9%  pthread_cond_signal@@GLIBC_2.3.2
+     16    0.3%    1.5%  __mprotect@@GLIBC_PRIVATE
+     10    0.2%    1.0%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+     10    0.2%    1.0%  __libc_malloc@@GLIBC_2.2.5
+      9    0.2%    0.9%  cfree@GLIBC_2.2.5
+      8    0.2%    0.8%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+      8    0.2%    0.8%  _IO_file_xsputn@@GLIBC_2.2.5
+      5    0.1%    0.5%  __pthread_mutex_lock@GLIBC_2.2.5
+      4    0.1%    0.4%  shutdown@@GLIBC_2.2.5
+      4    0.1%    0.4%  __pthread_mutex_unlock@GLIBC_2.2.5
+      3    0.1%    0.3%  std::ostream::flush()@@GLIBCXX_3.4
+      3    0.1%    0.3%  std::locale::id::_M_id() const@@GLIBCXX_3.4
+      3    0.1%    0.3%  accept4@@GLIBC_2.10
+      2    0.0%    0.2%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      2    0.0%    0.2%  operator new[](unsigned long)@@GLIBCXX_3.4
+      2    0.0%    0.2%  operator new(unsigned long)@@GLIBCXX_3.4
+      2    0.0%    0.2%  operator delete(void*)@@GLIBCXX_3.4
+      2    0.0%    0.2%  epoll_ctl@@GLIBC_2.3.2
+      2    0.0%    0.2%  brk@@GLIBC_2.2.5
+      2    0.0%    0.2%  __mmap@@GLIBC_PRIVATE
+      1    0.0%    0.1%  syscall@@GLIBC_2.2.5
+      1    0.0%    0.1%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      1    0.0%    0.1%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const@@GLIBCXX_3.4.18
+      1    0.0%    0.1%  sigaddset@@GLIBC_2.2.5
+      1    0.0%    0.1%  pthread_condattr_setclock@GLIBC_2.3.3
+      1    0.0%    0.1%  pthread_cond_timedwait@@GLIBC_2.3.2
+      1    0.0%    0.1%  operator delete[](void*)@@GLIBCXX_3.4
+      1    0.0%    0.1%  fmod@@GLIBC_2.2.5
+      1    0.0%    0.1%  fflush@@GLIBC_2.2.5
+      1    0.0%    0.1%  __munmap@@GLIBC_PRIVATE
+      1    0.0%    0.1%  __clock_gettime@@GLIBC_PRIVATE
+      1    0.0%    0.1%  _IO_do_write@@GLIBC_2.2.5
+
+ [Summary]:
+   ticks  total  nonlib   name
+     96    1.9%    9.2%  JavaScript
+    936   18.5%   89.8%  C++
+    207    4.1%   19.9%  GC
+   4029   79.5%          Shared libraries
+     10    0.2%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     83   34.3%    1.6%  __write@@GLIBC_2.2.5
+     62   25.6%    1.2%  writev@@GLIBC_2.2.5
+     17    7.0%    0.3%  fwrite@@GLIBC_2.2.5
+     10    4.1%    0.2%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      8    3.3%    0.2%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+      8    3.3%    0.2%  _IO_file_xsputn@@GLIBC_2.2.5
+      7    2.9%    0.1%  cfree@GLIBC_2.2.5
+      7    2.9%    0.1%  __mprotect@@GLIBC_PRIVATE
+      7    2.9%    0.1%  __libc_malloc@@GLIBC_2.2.5
+      5    2.1%    0.1%  __pthread_mutex_lock@GLIBC_2.2.5
+      4    1.7%    0.1%  __pthread_mutex_unlock@GLIBC_2.2.5
+      3    1.2%    0.1%  std::ostream::flush()@@GLIBCXX_3.4
+      3    1.2%    0.1%  std::locale::id::_M_id() const@@GLIBCXX_3.4
+      2    0.8%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      2    0.8%    0.0%  pthread_cond_signal@@GLIBC_2.3.2
+      2    0.8%    0.0%  operator new(unsigned long)@@GLIBCXX_3.4
+      2    0.8%    0.0%  operator delete(void*)@@GLIBCXX_3.4
+      2    0.8%    0.0%  brk@@GLIBC_2.2.5
+      1    0.4%    0.0%  syscall@@GLIBC_2.2.5
+      1    0.4%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      1    0.4%    0.0%  operator new[](unsigned long)@@GLIBCXX_3.4
+      1    0.4%    0.0%  operator delete[](void*)@@GLIBCXX_3.4
+      1    0.4%    0.0%  fmod@@GLIBC_2.2.5
+      1    0.4%    0.0%  fflush@@GLIBC_2.2.5
+      1    0.4%    0.0%  __clock_gettime@@GLIBC_PRIVATE
+      1    0.4%    0.0%  _IO_do_write@@GLIBC_2.2.5
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   3877   76.5%  /home/simon/.nvm/versions/node/v14.21.2/bin/node
+   2207   56.9%    /home/simon/.nvm/versions/node/v14.21.2/bin/node
+    350   15.9%      LazyCompile: ~wrapSafe internal/modules/cjs/loader.js:986:18
+    350  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+    350  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+    350  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+    137    6.2%      LazyCompile: ~readSync fs.js:579:18
+    137  100.0%        LazyCompile: ~tryReadSync fs.js:379:21
+    137  100.0%          LazyCompile: ~readFileSync fs.js:391:22
+    135   98.5%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      2    1.5%            LazyCompile: ~Module._extensions..json internal/modules/cjs/loader.js:1119:39
+    107    4.8%      LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+     14   13.1%        LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:923697
+     14  100.0%          LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:223
+     14  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:218
+      9    8.4%        LazyCompile: ~73935 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:714405
+      9  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      9  100.0%            LazyCompile: ~11092 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:200289
+      5    4.7%        LazyCompile: ~94994 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:7423
+      5  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      5  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:923697
+      5    4.7%        LazyCompile: ~90242 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:230992
+      5  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      5  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:923697
+      3    2.8%        LazyCompile: ~97451 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:99925
+      3  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      3  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:923697
+      3    2.8%        LazyCompile: ~42830 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:836836
+      3  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      3  100.0%            LazyCompile: ~53479 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:864673
+      2    1.9%        LazyCompile: ~96470 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:556581
+      2  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      2  100.0%            LazyCompile: ~33424 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:208610
+      2    1.9%        LazyCompile: ~84206 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:114244
+      2  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      2  100.0%            LazyCompile: ~86575 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:114043
+      2    1.9%        LazyCompile: ~74370 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:149770
+      2  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      2  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:923697
+      2    1.9%        LazyCompile: ~59783 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:528177
+      2  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      2  100.0%            LazyCompile: ~42980 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:527906
+      2    1.9%        LazyCompile: ~49677 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:311790
+      2  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      2  100.0%            LazyCompile: ~76887 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:297007
+      2    1.9%        LazyCompile: ~38407 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:518069
+      2  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      2  100.0%            LazyCompile: ~46384 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:519029
+      2    1.9%        LazyCompile: ~37478 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:835696
+      2  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      2  100.0%            LazyCompile: ~58261 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:575346
+      2    1.9%        LazyCompile: ~27698 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:374716
+      2  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      2  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:923697
+      2    1.9%        LazyCompile: ~2492 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:524626
+      2  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      2  100.0%            LazyCompile: ~90939 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:524479
+      2    1.9%        LazyCompile: ~20032 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:137203
+      2  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      2  100.0%            LazyCompile: ~37038 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:136996
+     95    4.3%      LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+     87   91.6%        LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:306:29
+      6    6.9%          Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      5    5.7%          Eval: ~<anonymous> crypto.js:1:1
+      5  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      4    4.6%          Eval: ~<anonymous> tls.js:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      4    4.6%          Eval: ~<anonymous> stream.js:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      4    4.6%          Eval: ~<anonymous> internal/source_map/source_map_cache.js:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      4    4.6%          Eval: ~<anonymous> internal/modules/esm/loader.js:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      4    4.6%          Eval: ~<anonymous> fs.js:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      3    3.4%          LazyCompile: ~setupPrepareStackTrace internal/bootstrap/node.js:254:32
+      3  100.0%            Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      3    3.4%          LazyCompile: ~initializeCJSLoader internal/bootstrap/pre_execution.js:427:29
+      3  100.0%            LazyCompile: ~prepareMainThreadExecution internal/bootstrap/pre_execution.js:21:36
+      3    3.4%          Eval: ~<anonymous> tty.js:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      3    3.4%          Eval: ~<anonymous> net.js:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      3    3.4%          Eval: ~<anonymous> http.js:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      3    3.4%          Eval: ~<anonymous> events.js:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      2    2.3%          Eval: ~<anonymous> timers.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      2    2.3%          Eval: ~<anonymous> internal/url.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      2    2.3%          Eval: ~<anonymous> internal/process/task_queues.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      2    2.3%          Eval: ~<anonymous> internal/process/esm_loader.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      2    2.3%          Eval: ~<anonymous> internal/modules/package_json_reader.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      2    2.3%          Eval: ~<anonymous> internal/modules/esm/get_source.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      2    2.3%          Eval: ~<anonymous> internal/cluster/master.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      2    2.3%          Eval: ~<anonymous> _http_client.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          LazyCompile: ~setupProcessObject internal/bootstrap/node.js:273:28
+      1  100.0%            Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      1    1.1%          LazyCompile: ~lazyLoadStreams fs.js:2065:25
+      1  100.0%            LazyCompile: ~get ReadStream fs.js:2173:17
+      1    1.1%          LazyCompile: ~initializeSourceMapsHandlers internal/bootstrap/pre_execution.js:452:38
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution internal/bootstrap/pre_execution.js:21:36
+      1    1.1%          LazyCompile: ~get dns.js:333:8
+      1  100.0%            /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1    1.1%          LazyCompile: ~get BlockList net.js:1775:16
+      1  100.0%            /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1    1.1%          Eval: ~<anonymous> internal/util/inspect.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> internal/streams/readable.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> internal/modules/esm/module_map.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> internal/modules/cjs/loader.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> internal/fs/promises.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> internal/crypto/pbkdf2.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> internal/crypto/keygen.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> internal/console/global.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> internal/console/constructor.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> internal/child_process.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> internal/blocklist.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> dns.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> cluster.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> child_process.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> buffer.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> assert.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1    1.1%          Eval: ~<anonymous> _tls_wrap.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      8    8.4%        LazyCompile: ~compileForPublicLoader internal/bootstrap/loaders.js:220:25
+      8  100.0%          LazyCompile: ~loadNativeModule internal/modules/cjs/helpers.js:43:26
+      8  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+     90    4.1%      LazyCompile: ~writevGeneric internal/stream_base_commons.js:118:23
+     90  100.0%        LazyCompile: ~Socket._writeGeneric net.js:772:42
+     90  100.0%          LazyCompile: ~Socket._writev net.js:804:36
+     90  100.0%            LazyCompile: ~doWrite internal/streams/writable.js:367:17
+     89    4.0%      /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      9   10.1%        LazyCompile: ~expressInit /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/middleware/init.js:29:30
+      6   66.7%          LazyCompile: *trim_prefix /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:293:23
+      6  100.0%            LazyCompile: *next /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:177:16
+      3   33.3%          LazyCompile: ~handle /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/layer.js:86:49
+      3  100.0%            LazyCompile: ~trim_prefix /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:293:23
+      8    9.0%        LazyCompile: ~readPackage internal/modules/cjs/loader.js:258:21
+      5   62.5%          LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:289:26
+      3   60.0%            LazyCompile: ~trySelf internal/modules/cjs/loader.js:409:17
+      2   40.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      2   25.0%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:306:20
+      2  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      1   12.5%          LazyCompile: ~resolveExports internal/modules/cjs/loader.js:440:24
+      1  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      6    6.7%        LazyCompile: ~94994 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:7423
+      6  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      6  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:923697
+      5    5.6%        LazyCompile: ~header /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:777:29
+      3   60.0%          LazyCompile: ~send /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:111:25
+      3  100.0%            LazyCompile: ~json /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:250:25
+      2   40.0%          LazyCompile: ~json /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:250:25
+      2  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/dist/server.js:84:14
+      5    5.6%        LazyCompile: ~format /home/simon/Bureau/SAE_FIMU/API/node_modules/content-type/index.js:65:17
+      5  100.0%          LazyCompile: ~setCharset /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/utils.js:248:41
+      3   60.0%            LazyCompile: ~send /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:111:25
+      2   40.0%            LazyCompile: *send /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:111:25
+      5    5.6%        LazyCompile: ~_apply_rules /home/simon/Bureau/SAE_FIMU/API/node_modules/inflection/lib/inflection.js:598:29
+      4   80.0%          LazyCompile: ~pluralize /home/simon/Bureau/SAE_FIMU/API/node_modules/inflection/lib/inflection.js:677:26
+      4  100.0%            LazyCompile: ~pluralize /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/utils.js:101:19
+      1   20.0%          LazyCompile: ~singularize /home/simon/Bureau/SAE_FIMU/API/node_modules/inflection/lib/inflection.js:699:28
+      1  100.0%            LazyCompile: ~singularize /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/utils.js:97:21
+      3    3.4%        LazyCompile: ~resolve path.js:1067:10
+      3  100.0%          LazyCompile: ~readPackage internal/modules/cjs/loader.js:258:21
+      2   66.7%            LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:289:26
+      1   33.3%            LazyCompile: ~resolveExports internal/modules/cjs/loader.js:440:24
+      3    3.4%        LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      2   66.7%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      2  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1   33.3%          LazyCompile: ~resolveMainPath internal/modules/run_main.js:14:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint internal/modules/run_main.js:68:31
+      2    2.2%        LazyCompile: ~unwrapComment /home/simon/Bureau/SAE_FIMU/API/node_modules/doctrine/lib/doctrine.js:97:27
+      2  100.0%          LazyCompile: ~parse /home/simon/Bureau/SAE_FIMU/API/node_modules/doctrine/lib/doctrine.js:826:23
+      2  100.0%            LazyCompile: ~build /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-jsdoc/src/specification.js:186:15
+      2    2.2%        LazyCompile: ~run /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/dialects/postgres/query.js:35:12
+      2  100.0%          /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      2  100.0%            /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      2    2.2%        LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:289:26
+      1   50.0%          LazyCompile: ~trySelf internal/modules/cjs/loader.js:409:17
+      1  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1   50.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      2    2.2%        LazyCompile: ~pathtoRegexp /home/simon/Bureau/SAE_FIMU/API/node_modules/path-to-regexp/index.js:28:22
+      2  100.0%          LazyCompile: ~Layer /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/layer.js:33:15
+      2  100.0%            LazyCompile: ~Layer /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/layer.js:33:15
+      2    2.2%        LazyCompile: ~parseRange /home/simon/Bureau/SAE_FIMU/API/node_modules/semver/classes/range.js:79:14
+      2  100.0%          LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/semver/classes/range.js:34:12
+      2  100.0%            /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      2    2.2%        LazyCompile: ~entitytag /home/simon/Bureau/SAE_FIMU/API/node_modules/etag/index.js:39:20
+      2  100.0%          LazyCompile: ~etag /home/simon/Bureau/SAE_FIMU/API/node_modules/etag/index.js:70:15
+      1   50.0%            LazyCompile: ~generateETag /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/utils.js:273:32
+      1   50.0%            LazyCompile: *send /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:111:25
+      2    2.2%        LazyCompile: ~checkInvalidHeaderChar _http_common.js:231:32
+      2  100.0%          LazyCompile: ~<anonymous> _http_outgoing.js:549:45
+      1   50.0%            LazyCompile: ~setHeader _http_outgoing.js:559:57
+      1   50.0%            LazyCompile: *send /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:111:25
+      2    2.2%        LazyCompile: ~addZone /home/simon/Bureau/SAE_FIMU/API/node_modules/moment-timezone/moment-timezone.js:407:19
+      2  100.0%          LazyCompile: ~loadData /home/simon/Bureau/SAE_FIMU/API/node_modules/moment-timezone/moment-timezone.js:528:20
+      2  100.0%            Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/moment-timezone/index.js:1:1
+      2    2.2%        LazyCompile: ~FastBuffer internal/buffer.js:957:14
+      2  100.0%          LazyCompile: ~createUnsafeBuffer buffer.js:153:28
+      2  100.0%            LazyCompile: ~createPool buffer.js:162:20
+      1    1.1%        LazyCompile: ~wrapSafe internal/modules/cjs/loader.js:986:18
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.1%        LazyCompile: ~unpackBase60 /home/simon/Bureau/SAE_FIMU/API/node_modules/moment-timezone/moment-timezone.js:66:23
+      1  100.0%          LazyCompile: ~arrayToInt /home/simon/Bureau/SAE_FIMU/API/node_modules/moment-timezone/moment-timezone.js:98:22
+      1  100.0%            LazyCompile: ~addToGuesses /home/simon/Bureau/SAE_FIMU/API/node_modules/moment-timezone/moment-timezone.js:323:24
+      1    1.1%        LazyCompile: ~stringToPath /home/simon/Bureau/SAE_FIMU/API/node_modules/get-intrinsic/index.js:210:41
+      1  100.0%          LazyCompile: ~GetIntrinsic /home/simon/Bureau/SAE_FIMU/API/node_modules/get-intrinsic/index.js:253:39
+      1  100.0%            LazyCompile: ~callBoundIntrinsic /home/simon/Bureau/SAE_FIMU/API/node_modules/call-bind/callBound.js:9:45
+      1    1.1%        LazyCompile: ~stat internal/modules/cjs/loader.js:146:14
+      1  100.0%          LazyCompile: ~tryFile internal/modules/cjs/loader.js:352:17
+      1  100.0%            LazyCompile: ~tryPackage internal/modules/cjs/loader.js:306:20
+      1    1.1%        LazyCompile: ~resolveScalar /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/stringifyNumber-dea1120c.js:743:23
+      1  100.0%          LazyCompile: ~resolveNodeValue /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/Document-f89a2614.js:1176:26
+      1  100.0%            LazyCompile: ~resolveNode /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/Document-f89a2614.js:1227:21
+      1    1.1%        LazyCompile: ~query /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/sequelize.js:237:14
+      1  100.0%          LazyCompile: ~tableExists /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/dialects/abstract/query-interface.js:100:20
+      1  100.0%            LazyCompile: ~sync /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/model.js:925:20
+      1    1.1%        LazyCompile: ~populateMaps /home/simon/Bureau/SAE_FIMU/API/node_modules/mime-types/index.js:154:23
+      1  100.0%          Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/mime-types/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.1%        LazyCompile: ~parse /home/simon/Bureau/SAE_FIMU/API/node_modules/content-type/index.js:106:16
+      1  100.0%          LazyCompile: ~setCharset /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/utils.js:248:41
+      1  100.0%            LazyCompile: *send /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:111:25
+      1    1.1%        LazyCompile: ~parse /home/simon/Bureau/SAE_FIMU/API/node_modules/bytes/index.js:141:15
+      1  100.0%          LazyCompile: ~urlencoded /home/simon/Bureau/SAE_FIMU/API/node_modules/body-parser/lib/types/urlencoded.js:43:21
+      1  100.0%            Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/dist/server.js:1:1
+      1    1.1%        LazyCompile: ~next internal/per_context/primordials.js:266:9
+      1  100.0%          LazyCompile: *end _http_outgoing.js:795:45
+      1  100.0%            LazyCompile: *send /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:111:25
+      1    1.1%        LazyCompile: ~lookup /home/simon/Bureau/SAE_FIMU/API/node_modules/mime/mime.js:102:19
+      1  100.0%          LazyCompile: ~header /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:777:29
+      1  100.0%            LazyCompile: ~json /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:250:25
+      1    1.1%        LazyCompile: ~isForeignKeysQuery /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/dialects/postgres/query.js:313:21
+      1  100.0%          LazyCompile: ~run /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/dialects/postgres/query.js:35:12
+      1  100.0%            /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1    1.1%        LazyCompile: ~i.normalize /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:304703
+      1  100.0%          LazyCompile: ~i /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:304625
+      1  100.0%            LazyCompile: ~e.exports /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:297397
+      1    1.1%        LazyCompile: ~e.exports /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:549146
+      1  100.0%          LazyCompile: ~e.exports /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:556407
+      1  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:533513
+      1    1.1%        LazyCompile: ~addCommandComplete /home/simon/Bureau/SAE_FIMU/API/node_modules/pg/lib/result.js:27:21
+      1  100.0%          LazyCompile: ~handleCommandComplete /home/simon/Bureau/SAE_FIMU/API/node_modules/pg/lib/query.js:99:24
+      1  100.0%            LazyCompile: ~_handleCommandComplete /home/simon/Bureau/SAE_FIMU/API/node_modules/pg/lib/client.js:371:25
+      1    1.1%        LazyCompile: ~SemVer /home/simon/Bureau/SAE_FIMU/API/node_modules/semver/classes/semver.js:8:15
+      1  100.0%          LazyCompile: ~parse /home/simon/Bureau/SAE_FIMU/API/node_modules/semver/classes/comparator.js:33:9
+      1  100.0%            LazyCompile: ~Comparator /home/simon/Bureau/SAE_FIMU/API/node_modules/semver/classes/comparator.js:8:15
+      1    1.1%        LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:260209
+      1  100.0%          LazyCompile: ~Nt.extend /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:259047
+      1  100.0%            LazyCompile: ~Nt /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:258993
+      1    1.1%        LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:600955
+      1  100.0%          /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1  100.0%            LazyCompile: ~64448 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:596283
+      1    1.1%        LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:558916
+      1  100.0%          LazyCompile: ~27418 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:558772
+      1  100.0%            LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1    1.1%        LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/model.js:833:32
+      1  100.0%          LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:4959:22
+      1  100.0%            LazyCompile: ~baseForOwn /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:3031:24
+      1    1.1%        LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/associations/mixin.js:60:18
+      1  100.0%          LazyCompile: ~createCommonSchema /home/simon/Bureau/SAE_FIMU/API/dist/models/index.js:47:34
+      1  100.0%            /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1    1.1%        LazyCompile: ~74370 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:149770
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:923697
+      1    1.1%        LazyCompile: ~64448 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:596283
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~73935 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:714405
+      1    1.1%        LazyCompile: *set /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/application.js:359:23
+      1  100.0%          LazyCompile: ~app.<computed> /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/application.js:490:25
+      1  100.0%            LazyCompile: ~json /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:250:25
+      1    1.1%        LazyCompile: *next /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:177:16
+      1  100.0%          LazyCompile: ~urlencodedParser /home/simon/Bureau/SAE_FIMU/API/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      1  100.0%            LazyCompile: *trim_prefix /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:293:23
+      1    1.1%        Eval: ~<anonymous> _tls_wrap.js:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:306:29
+      1    1.1%        /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1  100.0%          LazyCompile: ~replaceCaret /home/simon/Bureau/SAE_FIMU/API/node_modules/semver/classes/range.js:302:22
+      1  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/semver/classes/range.js:298:32
+     83    3.8%      Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:10
+     83  100.0%        Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:1:1
+     83  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+     83  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+     39    1.8%      LazyCompile: ~stat internal/modules/cjs/loader.js:146:14
+     21   53.8%        LazyCompile: ~tryFile internal/modules/cjs/loader.js:352:17
+     17   81.0%          LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:368:23
+     17  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      3   14.3%          LazyCompile: ~tryPackage internal/modules/cjs/loader.js:306:20
+      3  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      1    4.8%          LazyCompile: ~finalizeEsmResolution internal/modules/cjs/loader.js:908:31
+      1  100.0%            LazyCompile: ~resolveExports internal/modules/cjs/loader.js:440:24
+     18   46.2%        LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+     18  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+     18  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+     39    1.8%      LazyCompile: ~Hash internal/crypto/hash.js:37:14
+     39  100.0%        LazyCompile: ~createHash crypto.js:113:20
+     39  100.0%          LazyCompile: ~entitytag /home/simon/Bureau/SAE_FIMU/API/node_modules/etag/index.js:39:20
+     39  100.0%            LazyCompile: ~etag /home/simon/Bureau/SAE_FIMU/API/node_modules/etag/index.js:70:15
+     32    1.4%      LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      5   15.6%        LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245812
+      5  100.0%          LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:243
+      5  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:238
+      3    9.4%        LazyCompile: ~79481 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:188519
+      3  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      3  100.0%            LazyCompile: ~42830 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:234773
+      2    6.3%        LazyCompile: ~42830 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:234773
+      2  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      2  100.0%            LazyCompile: ~53479 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:239942
+      1    3.1%        LazyCompile: ~76887 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:43982
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~86450 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:71211
+      1    3.1%        LazyCompile: ~74448 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:224758
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~89072 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:224496
+      1    3.1%        LazyCompile: ~73381 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:69819
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~27700 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:28463
+      1    3.1%        LazyCompile: ~69743 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:78641
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~47475 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:242689
+      1    3.1%        LazyCompile: ~69601 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:30113
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~82073 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:79407
+      1    3.1%        LazyCompile: ~67294 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:184872
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245812
+      1    3.1%        LazyCompile: ~57473 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:31566
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~92547 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:79854
+      1    3.1%        LazyCompile: ~57398 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:72793
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~13348 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:31498
+      1    3.1%        LazyCompile: ~54493 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:27214
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~27698 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:78079
+      1    3.1%        LazyCompile: ~52201 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:32313
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~86600 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:32074
+      1    3.1%        LazyCompile: ~49677 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:57490
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~76887 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:43982
+      1    3.1%        LazyCompile: ~48616 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:72979
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~35824 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:76199
+      1    3.1%        LazyCompile: ~44239 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:150335
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~33448 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:171397
+      1    3.1%        LazyCompile: ~40031 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:27126
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~27398 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:32438
+      1    3.1%        LazyCompile: ~38407 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:146816
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~24785 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:164261
+      1    3.1%        LazyCompile: ~35824 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:76199
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~57473 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:31566
+      1    3.1%        LazyCompile: ~29290 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:55909
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~48616 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:72979
+      1    3.1%        LazyCompile: ~28483 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:149946
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~47816 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:149992
+      1    3.1%        LazyCompile: ~2492 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:150855
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~90939 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:150708
+      1    3.1%        LazyCompile: ~1499 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:159969
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~91573 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:153311
+      1    3.1%        LazyCompile: ~13311 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:169458
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245812
+      1    3.1%        LazyCompile: ~10852 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:160109
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~94536 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:165155
+     32    1.4%      LazyCompile: ~pbkdf2Sync internal/crypto/pbkdf2.js:44:20
+     32  100.0%        LazyCompile: ~continueSession /home/simon/Bureau/SAE_FIMU/API/node_modules/pg/lib/sasl.js:19:25
+     32  100.0%          LazyCompile: ~_handleAuthSASLContinue /home/simon/Bureau/SAE_FIMU/API/node_modules/pg/lib/client.js:261:26
+     32  100.0%            LazyCompile: ~emit events.js:349:44
+     28    1.3%      LazyCompile: *nextTick internal/process/task_queues.js:103:18
+      7   25.0%        LazyCompile: ~onwrite internal/streams/writable.js:394:17
+      4   57.1%          LazyCompile: ~afterWriteDispatched internal/stream_base_commons.js:151:30
+      4  100.0%            LazyCompile: ~writevGeneric internal/stream_base_commons.js:118:23
+      2   28.6%          LazyCompile: *writevGeneric internal/stream_base_commons.js:118:23
+      2  100.0%            LazyCompile: ~Socket._writeGeneric net.js:772:42
+      1   14.3%          LazyCompile: *clearBuffer internal/streams/writable.js:493:21
+      1  100.0%            LazyCompile: *end _http_outgoing.js:795:45
+      6   21.4%        LazyCompile: ~emitReadable internal/streams/readable.js:540:22
+      6  100.0%          LazyCompile: ~onEofChunk internal/streams/readable.js:510:20
+      6  100.0%            LazyCompile: ~readableAddChunk internal/streams/readable.js:214:26
+      5   17.9%        LazyCompile: *Readable.read internal/streams/readable.js:374:35
+      3   60.0%          LazyCompile: ~flow internal/streams/readable.js:983:14
+      2   66.7%            LazyCompile: ~resume_ internal/streams/readable.js:959:17
+      1   33.3%            LazyCompile: ~emitReadable_ internal/streams/readable.js:551:23
+      2   40.0%          LazyCompile: ~resume_ internal/streams/readable.js:959:17
+      2  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:67:35
+      3   10.7%        LazyCompile: ~resume internal/streams/readable.js:952:16
+      3  100.0%          LazyCompile: ~Readable.resume internal/streams/readable.js:938:37
+      3  100.0%            LazyCompile: ~_dump _http_incoming.js:297:49
+      3   10.7%        LazyCompile: ~resOnFinish _http_server.js:764:21
+      2   66.7%          LazyCompile: *emit events.js:349:44
+      2  100.0%            LazyCompile: ~onFinish _http_outgoing.js:790:18
+      1   33.3%          LazyCompile: ~emit events.js:349:44
+      1  100.0%            LazyCompile: ~onFinish _http_outgoing.js:790:18
+      3   10.7%        LazyCompile: ~endReadable internal/streams/readable.js:1316:21
+      3  100.0%          LazyCompile: ~Readable.read internal/streams/readable.js:374:35
+      2   66.7%            LazyCompile: ~flow internal/streams/readable.js:983:14
+      1   33.3%            LazyCompile: ~resume_ internal/streams/readable.js:959:17
+      1    3.6%        LazyCompile: ~<anonymous> internal/streams/destroy.js:39:30
+      1  100.0%          LazyCompile: ~Socket._destroy net.js:666:37
+      1  100.0%            LazyCompile: ~destroy internal/streams/destroy.js:5:17
+     23    1.0%      LazyCompile: ~writeHead _http_server.js:254:19
+     19   82.6%        LazyCompile: ~_implicitHeader _http_server.js:249:68
+     19  100.0%          LazyCompile: ~write_ _http_outgoing.js:704:16
+     19  100.0%            LazyCompile: ~end _http_outgoing.js:795:45
+      4   17.4%        LazyCompile: *end _http_outgoing.js:795:45
+      4  100.0%          LazyCompile: *send /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:111:25
+      4  100.0%            LazyCompile: ~json /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:250:25
+     23    1.0%      LazyCompile: *next /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:177:16
+     16   69.6%        LazyCompile: ~urlencodedParser /home/simon/Bureau/SAE_FIMU/API/node_modules/body-parser/lib/types/urlencoded.js:79:36
+     13   81.3%          LazyCompile: *trim_prefix /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:293:23
+     13  100.0%            LazyCompile: *next /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:177:16
+      3   18.8%          LazyCompile: ~handle /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/layer.js:86:49
+      3  100.0%            LazyCompile: ~trim_prefix /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:293:23
+      4   17.4%        LazyCompile: ~jsonParser /home/simon/Bureau/SAE_FIMU/API/node_modules/body-parser/lib/types/json.js:101:30
+      3   75.0%          LazyCompile: *trim_prefix /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:293:23
+      3  100.0%            LazyCompile: *next /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:177:16
+      1   25.0%          LazyCompile: ~handle /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~trim_prefix /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:293:23
+      2    8.7%        LazyCompile: ~handle /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:136:31
+      2  100.0%          LazyCompile: ~handle /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/application.js:165:29
+      2  100.0%            LazyCompile: ~app /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/express.js:38:21
+      1    4.3%        LazyCompile: *handle /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:136:31
+      1  100.0%          LazyCompile: ~handle /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/application.js:165:29
+      1  100.0%            LazyCompile: ~app /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/express.js:38:21
+
+    604   11.9%  epoll_pwait@@GLIBC_2.6
+
+    149    2.9%  /usr/lib/x86_64-linux-gnu/libc.so.6
+     63   42.3%    /home/simon/.nvm/versions/node/v14.21.2/bin/node
+     12   19.0%      /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      2   16.7%        LazyCompile: ~stat internal/modules/cjs/loader.js:146:14
+      2  100.0%          LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      2  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      2   16.7%        LazyCompile: ~readPackage internal/modules/cjs/loader.js:258:21
+      2  100.0%          LazyCompile: ~readPackageScope internal/modules/cjs/loader.js:289:26
+      2  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      2   16.7%        LazyCompile: ~match /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/layer.js:110:39
+      2  100.0%          LazyCompile: ~matchLayer /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:583:20
+      2  100.0%            LazyCompile: ~next /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:177:16
+      1    8.3%        LazyCompile: ~unwrapComment /home/simon/Bureau/SAE_FIMU/API/node_modules/doctrine/lib/doctrine.js:97:27
+      1  100.0%          LazyCompile: ~parse /home/simon/Bureau/SAE_FIMU/API/node_modules/doctrine/lib/doctrine.js:826:23
+      1  100.0%            LazyCompile: ~build /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-jsdoc/src/specification.js:186:15
+      1    8.3%        LazyCompile: ~refreshAttributes /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/model.js:777:27
+      1  100.0%          LazyCompile: ~init /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/model.js:660:14
+      1  100.0%            LazyCompile: ~define /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/sequelize.js:220:9
+      1    8.3%        LazyCompile: ~finalizeEsmResolution internal/modules/cjs/loader.js:908:31
+      1  100.0%          LazyCompile: ~resolveExports internal/modules/cjs/loader.js:440:24
+      1  100.0%            LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      1    8.3%        LazyCompile: ~entitytag /home/simon/Bureau/SAE_FIMU/API/node_modules/etag/index.js:39:20
+      1  100.0%          LazyCompile: ~etag /home/simon/Bureau/SAE_FIMU/API/node_modules/etag/index.js:70:15
+      1  100.0%            LazyCompile: ~generateETag /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/utils.js:273:32
+      1    8.3%        LazyCompile: ~addZone /home/simon/Bureau/SAE_FIMU/API/node_modules/moment-timezone/moment-timezone.js:407:19
+      1  100.0%          LazyCompile: ~loadData /home/simon/Bureau/SAE_FIMU/API/node_modules/moment-timezone/moment-timezone.js:528:20
+      1  100.0%            Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/moment-timezone/index.js:1:1
+      1    8.3%        LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      5    7.9%      LazyCompile: ~alphasort /home/simon/Bureau/SAE_FIMU/API/node_modules/glob/common.js:24:20
+      5  100.0%        /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      5  100.0%          LazyCompile: ~finish /home/simon/Bureau/SAE_FIMU/API/node_modules/glob/common.js:122:17
+      5  100.0%            LazyCompile: ~GlobSync._finish /home/simon/Bureau/SAE_FIMU/API/node_modules/glob/sync.js:53:39
+      3    4.8%      LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1   33.3%        LazyCompile: ~92547 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:79854
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~80281 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:27073
+      1   33.3%        LazyCompile: ~62978 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:31887
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~35774 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:79958
+      1   33.3%        LazyCompile: ~58748 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:173190
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~35393 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:155826
+      3    4.8%      LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1   33.3%        LazyCompile: ~90242 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:230992
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:923697
+      1   33.3%        LazyCompile: ~3269 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:281668
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~71611 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:280029
+      1   33.3%        LazyCompile: ~23112 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:332359
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~37501 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:332500
+      2    3.2%      LazyCompile: ~_addHeaderLine _http_incoming.js:270:24
+      2  100.0%        LazyCompile: ~_addHeaderLines _http_incoming.js:136:25
+      2  100.0%          LazyCompile: ~parserOnHeadersComplete _http_common.js:76:33
+      2    3.2%      LazyCompile: *applyHeaders /home/simon/Bureau/SAE_FIMU/API/node_modules/cors/lib/index.js:144:24
+      2  100.0%        LazyCompile: *applyHeaders /home/simon/Bureau/SAE_FIMU/API/node_modules/cors/lib/index.js:144:24
+      2  100.0%          LazyCompile: *applyHeaders /home/simon/Bureau/SAE_FIMU/API/node_modules/cors/lib/index.js:144:24
+      2  100.0%            LazyCompile: ~cors /home/simon/Bureau/SAE_FIMU/API/node_modules/cors/lib/index.js:159:16
+      1    1.6%      LazyCompile: ~send /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:111:25
+      1  100.0%        LazyCompile: ~json /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:250:25
+      1  100.0%          LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/dist/server.js:84:14
+      1  100.0%            LazyCompile: *trim_prefix /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:293:23
+      1    1.6%      LazyCompile: ~resolveTag /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/Document-f89a2614.js:1044:20
+      1  100.0%        LazyCompile: *resolveNode /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/Document-f89a2614.js:1227:21
+      1  100.0%          LazyCompile: ~parseContents /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/Document-f89a2614.js:1275:23
+      1  100.0%            LazyCompile: ~parse /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/Document-f89a2614.js:1608:8
+      1    1.6%      LazyCompile: ~resolve url.js:677:41
+      1  100.0%        LazyCompile: ~urlResolve url.js:673:20
+      1  100.0%          LazyCompile: ~parse /home/simon/Bureau/SAE_FIMU/API/node_modules/@apidevtools/json-schema-ref-parser/lib/index.js:77:51
+      1  100.0%            LazyCompile: ~SwaggerParser.parse /home/simon/Bureau/SAE_FIMU/API/node_modules/@apidevtools/swagger-parser/lib/index.js:55:48
+      1    1.6%      LazyCompile: ~resolve path.js:1067:10
+      1  100.0%        LazyCompile: ~Module._nodeModulePaths internal/modules/cjs/loader.js:597:37
+      1  100.0%          LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1  100.0%            LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1    1.6%      LazyCompile: ~refreshAttributes /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/model.js:777:27
+      1  100.0%        LazyCompile: ~_injectAttributes /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/associations/belongs-to-many.js:185:20
+      1  100.0%          LazyCompile: ~BelongsToMany /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/associations/belongs-to-many.js:32:14
+      1  100.0%            LazyCompile: ~belongsToMany /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/associations/mixin.js:31:16
+      1    1.6%      LazyCompile: ~parse /home/simon/Bureau/SAE_FIMU/API/node_modules/content-type/index.js:106:16
+      1  100.0%        LazyCompile: ~setCharset /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/utils.js:248:41
+      1  100.0%          LazyCompile: ~send /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:111:25
+      1  100.0%            LazyCompile: ~json /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:250:25
+      1    1.6%      LazyCompile: ~packageExportsResolve internal/modules/esm/resolve.js:509:31
+      1  100.0%        LazyCompile: ~resolveExports internal/modules/cjs/loader.js:440:24
+      1  100.0%          LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1    1.6%      LazyCompile: ~nextPart fs.js:1719:31
+      1  100.0%        LazyCompile: ~realpathSync fs.js:1723:22
+      1  100.0%          LazyCompile: ~toRealPath internal/modules/cjs/loader.js:361:20
+      1  100.0%            LazyCompile: ~tryFile internal/modules/cjs/loader.js:352:17
+      1    1.6%      LazyCompile: ~match /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/layer.js:110:39
+      1  100.0%        LazyCompile: ~matchLayer /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:583:20
+      1  100.0%          LazyCompile: ~next /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            LazyCompile: ~urlencodedParser /home/simon/Bureau/SAE_FIMU/API/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      1    1.6%      LazyCompile: ~isPlainObject /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash.mergewith/index.js:1793:23
+      1  100.0%        LazyCompile: ~baseMergeDeep /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash.mergewith/index.js:953:23
+      1  100.0%          LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash.mergewith/index.js:920:27
+      1  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash.mergewith/index.js:1185:18
+      1    1.6%      LazyCompile: ~getOptions internal/fs/utils.js:305:20
+      1  100.0%        LazyCompile: ~readFileSync fs.js:391:22
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.6%      LazyCompile: ~from buffer.js:307:28
+      1  100.0%        Eval: ~<anonymous> zlib.js:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1  100.0%            LazyCompile: ~compileForPublicLoader internal/bootstrap/loaders.js:220:25
+      1    1.6%      LazyCompile: ~findLongestRegisteredExtension internal/modules/cjs/loader.js:381:40
+      1  100.0%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      1    1.6%      LazyCompile: ~endReadableNT internal/streams/readable.js:1326:23
+      1  100.0%        LazyCompile: *processTicksAndRejections internal/process/task_queues.js:67:35
+      1    1.6%      LazyCompile: ~endOfBlockIndent /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/_rollupPluginBabelHelpers-eed30217.js:342:26
+      1  100.0%        LazyCompile: ~parseBlockValue /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/parse-3997f544.js:1258:18
+      1  100.0%          LazyCompile: ~parse /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/parse-3997f544.js:1311:8
+      1  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/parse-3997f544.js:1743:66
+      1    1.6%      LazyCompile: ~emitAfterScript internal/async_hooks.js:505:25
+      1  100.0%        LazyCompile: ~processTicksAndRejections internal/process/task_queues.js:67:35
+      1    1.6%      LazyCompile: ~createSchemaIfNotExist /home/simon/Bureau/SAE_FIMU/API/dist/models/index.js:44:38
+      1  100.0%        LazyCompile: ~createCommonSchema /home/simon/Bureau/SAE_FIMU/API/dist/models/index.js:47:34
+      1  100.0%          Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/dist/models/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.6%      LazyCompile: ~baseClone /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:2662:23
+      1  100.0%        LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:2727:41
+      1  100.0%          LazyCompile: ~arrayEach /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:525:21
+      1  100.0%            LazyCompile: ~baseClone /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:2662:23
+      1    1.6%      LazyCompile: ~addListener events.js:496:58
+      1  100.0%        LazyCompile: ~parserOnIncoming _http_server.js:826:26
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete _http_common.js:76:33
+      1    1.6%      LazyCompile: ~_unrefTimer net.js:405:52
+      1  100.0%        LazyCompile: ~Socket._writeGeneric net.js:772:42
+      1  100.0%          LazyCompile: ~Socket._writev net.js:804:36
+      1  100.0%            LazyCompile: ~doWrite internal/streams/writable.js:367:17
+      1    1.6%      LazyCompile: ~_send _http_outgoing.js:307:49
+      1  100.0%        LazyCompile: ~write_ _http_outgoing.js:704:16
+      1  100.0%          LazyCompile: ~end _http_outgoing.js:795:45
+      1  100.0%            LazyCompile: ~send /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:111:25
+      1    1.6%      LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      1  100.0%        LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:966:36
+      1    1.6%      LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:725:24
+      1  100.0%            LazyCompile: ~executeUserEntryPoint internal/modules/run_main.js:68:31
+      1    1.6%      LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash.mergewith/index.js:1453:18
+      1  100.0%        LazyCompile: ~baseRest /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash.mergewith/index.js:1023:18
+      1  100.0%          LazyCompile: ~createAssigner /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash.mergewith/index.js:1151:24
+      1  100.0%            Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash.mergewith/index.js:1:1
+      1    1.6%      LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/cors/lib/index.js:219:57
+      1  100.0%        LazyCompile: ~originCallback /home/simon/Bureau/SAE_FIMU/API/node_modules/cors/lib/index.js:213:39
+      1  100.0%          LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/cors/lib/index.js:204:37
+      1  100.0%            LazyCompile: ~optionsCallback /home/simon/Bureau/SAE_FIMU/API/node_modules/cors/lib/index.js:198:34
+      1    1.6%      LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/dist/server.js:84:14
+      1  100.0%        LazyCompile: *trim_prefix /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:280:64
+      1  100.0%            LazyCompile: ~param /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:359:17
+      1    1.6%      LazyCompile: ~89927 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:763220
+      1  100.0%        LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%          LazyCompile: ~94994 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:7423
+      1  100.0%            LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1    1.6%      LazyCompile: *processTicksAndRejections internal/process/task_queues.js:67:35
+      1    1.6%      LazyCompile: *normalizeString path.js:59:25
+      1  100.0%        LazyCompile: ~resolve path.js:1067:10
+      1  100.0%          LazyCompile: ~Module._findPath internal/modules/cjs/loader.js:462:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename internal/modules/cjs/loader.js:816:35
+      1    1.6%      LazyCompile: *nextTick internal/process/task_queues.js:103:18
+      1  100.0%        LazyCompile: ~resume internal/streams/readable.js:952:16
+      1  100.0%          LazyCompile: ~Readable.resume internal/streams/readable.js:938:37
+      1  100.0%            LazyCompile: ~_dump _http_incoming.js:297:49
+      1    1.6%      LazyCompile: *next /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:177:16
+      1  100.0%        LazyCompile: ~handle /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:136:31
+      1  100.0%          LazyCompile: ~handle /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/application.js:165:29
+      1  100.0%            LazyCompile: ~app /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/express.js:38:21
+      1    1.6%      LazyCompile: *end _http_outgoing.js:795:45
+      1  100.0%        LazyCompile: *send /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:111:25
+      1  100.0%          LazyCompile: ~json /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:250:25
+      1  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/dist/server.js:84:14
+      1    1.6%      LazyCompile: *Range /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/_rollupPluginBabelHelpers-eed30217.js:209:14
+      1  100.0%        LazyCompile: ~parse /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/parse-3997f544.js:50:8
+      1  100.0%          LazyCompile: *parse /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/parse-3997f544.js:248:8
+      1  100.0%            LazyCompile: *<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/parse-3997f544.js:1743:66
+      1    1.6%      Eval: ~<anonymous> internal/process/execution.js:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:306:29
+      1  100.0%            Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      1    1.6%      Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:10
+      1  100.0%        Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.6%      Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/debug/src/node.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+
+     97    1.9%  __write@@GLIBC_2.2.5
+     83   85.6%    /home/simon/.nvm/versions/node/v14.21.2/bin/node
+     20   24.1%      LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      2   10.0%        LazyCompile: ~85990 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:521636
+      2  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      2  100.0%            LazyCompile: ~57557 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:554491
+      1    5.0%        LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:923697
+      1  100.0%          LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:223
+      1  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:218
+      1    5.0%        LazyCompile: ~81876 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:328417
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~52999 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:277063
+      1    5.0%        LazyCompile: ~80129 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:571267
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~74370 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:149770
+      1    5.0%        LazyCompile: ~76887 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:297007
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~75915 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:328116
+      1    5.0%        LazyCompile: ~76467 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:87167
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~97451 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:99925
+      1    5.0%        LazyCompile: ~58826 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:880551
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~74370 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:149770
+      1    5.0%        LazyCompile: ~57557 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:554491
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~11092 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:200289
+      1    5.0%        LazyCompile: ~57406 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:530514
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~57557 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:554491
+      1    5.0%        LazyCompile: ~48403 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:549293
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~68929 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:549180
+      1    5.0%        LazyCompile: ~47250 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:351143
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~33601 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:363328
+      1    5.0%        LazyCompile: ~46935 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:321981
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~83894 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:322320
+      1    5.0%        LazyCompile: ~41599 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:67250
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~34980 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:66892
+      1    5.0%        LazyCompile: ~36968 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:555077
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~51228 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:128288
+      1    5.0%        LazyCompile: ~24848 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:363367
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~25110 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:878206
+      1    5.0%        LazyCompile: ~1989 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:517785
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~24785 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:543646
+      1    5.0%        LazyCompile: ~14636 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:519887
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~81704 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:553795
+      1    5.0%        LazyCompile: ~14482 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:339628
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~98881 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:339037
+      1    5.0%        LazyCompile: ~14419 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:583920
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~57050 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:120129
+      8    9.6%      LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1   12.5%        LazyCompile: ~91584 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:58465
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~21647 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:48814
+      1   12.5%        LazyCompile: ~67740 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:155981
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~13311 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:169458
+      1   12.5%        LazyCompile: ~62705 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:148030
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~80531 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:154332
+      1   12.5%        LazyCompile: ~60697 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:218339
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~14419 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:176048
+      1   12.5%        LazyCompile: ~60009 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:27705
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~7147 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:29208
+      1   12.5%        LazyCompile: ~58234 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:159748
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~16096 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:158978
+      1   12.5%        LazyCompile: ~53479 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:239942
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245812
+      1   12.5%        LazyCompile: ~280 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:153108
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~3674 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:171618
+      8    9.6%      /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1   12.5%        LazyCompile: ~stringToPath /home/simon/Bureau/SAE_FIMU/API/node_modules/get-intrinsic/index.js:210:41
+      1  100.0%          LazyCompile: ~GetIntrinsic /home/simon/Bureau/SAE_FIMU/API/node_modules/get-intrinsic/index.js:253:39
+      1  100.0%            Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/call-bind/index.js:1:1
+      1   12.5%        LazyCompile: ~replaceXRange /home/simon/Bureau/SAE_FIMU/API/node_modules/semver/classes/range.js:362:23
+      1  100.0%          LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/semver/classes/range.js:357:32
+      1  100.0%            /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1   12.5%        LazyCompile: ~e.exports /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:539775
+      1  100.0%          LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:533297
+      1  100.0%            LazyCompile: ~e.exports /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:549347
+      1   12.5%        LazyCompile: ~<anonymous> internal/util/inspect.js:131:5
+      1  100.0%          /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1  100.0%            Eval: ~<anonymous> internal/util/inspect.js:1:1
+      1   12.5%        LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:55348
+      1  100.0%          /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1  100.0%            LazyCompile: ~45308 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:55167
+      1   12.5%        LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:17122:78
+      1  100.0%          LazyCompile: ~arrayEach /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:525:21
+      1  100.0%            Eval: ~runInContext /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:1448:44
+      1   12.5%        LazyCompile: ~28458 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:525746
+      1  100.0%          LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%            LazyCompile: ~10852 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:537966
+      1   12.5%        LazyCompile: ~21385 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:36933
+      1  100.0%          LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%            LazyCompile: ~53242 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:66276
+      2    2.4%      LazyCompile: ~loadData /home/simon/Bureau/SAE_FIMU/API/node_modules/moment-timezone/moment-timezone.js:528:20
+      2  100.0%        Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/moment-timezone/index.js:1:1
+      2  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      2  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~wrapfunction /home/simon/Bureau/SAE_FIMU/API/node_modules/depd/index.js:413:23
+      1  100.0%        Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/utils.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~value internal/console/constructor.js:227:20
+      1  100.0%        Eval: ~<anonymous> internal/console/global.js:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:306:29
+      1    1.2%      LazyCompile: ~toArray /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:506576
+      1  100.0%        LazyCompile: ~St /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:480506
+      1  100.0%          LazyCompile: ~toList /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:507535
+      1  100.0%            LazyCompile: ~me /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:463534
+      1    1.2%      LazyCompile: ~setopts /home/simon/Bureau/SAE_FIMU/API/node_modules/glob/common.js:53:18
+      1  100.0%        LazyCompile: ~GlobSync /home/simon/Bureau/SAE_FIMU/API/node_modules/glob/sync.js:29:19
+      1  100.0%          LazyCompile: ~globSync /home/simon/Bureau/SAE_FIMU/API/node_modules/glob/sync.js:21:19
+      1  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-jsdoc/src/utils.js:13:10
+      1    1.2%      LazyCompile: ~set /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/application.js:359:23
+      1  100.0%        LazyCompile: ~defaultConfiguration /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/application.js:77:57
+      1  100.0%          LazyCompile: ~init /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/application.js:64:25
+      1  100.0%            LazyCompile: ~createApplication /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/express.js:37:27
+      1    1.2%      LazyCompile: ~run /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/dialects/postgres/query.js:35:12
+      1  100.0%        /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1  100.0%          /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1  100.0%            LazyCompile: ~processTicksAndRejections internal/process/task_queues.js:67:35
+      1    1.2%      LazyCompile: ~resolve /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize-pool/lib/Deferred.js:25:12
+      1  100.0%        LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize-pool/lib/Pool.js:138:19
+      1  100.0%          /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1  100.0%            LazyCompile: ~processTicksAndRejections internal/process/task_queues.js:67:35
+      1    1.2%      LazyCompile: ~prepareMainThreadExecution internal/bootstrap/pre_execution.js:21:36
+      1  100.0%        Eval: ~<anonymous> internal/main/run_main_module.js:1:1
+      1    1.2%      LazyCompile: ~match /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/layer.js:110:39
+      1  100.0%        LazyCompile: ~matchLayer /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:583:20
+      1  100.0%          LazyCompile: ~next /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/router/index.js:177:16
+      1  100.0%            LazyCompile: ~urlencodedParser /home/simon/Bureau/SAE_FIMU/API/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      1    1.2%      LazyCompile: ~lookup dns.js:97:16
+      1  100.0%        LazyCompile: ~<anonymous> net.js:1053:61
+      1  100.0%          LazyCompile: ~defaultTriggerAsyncIdScope internal/async_hooks.js:443:36
+      1  100.0%            LazyCompile: ~lookupAndConnect net.js:995:26
+      1    1.2%      LazyCompile: ~listCacheGet /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:2108:26
+      1  100.0%        LazyCompile: ~stackGet /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:2365:22
+      1  100.0%          LazyCompile: ~baseClone /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:2662:23
+      1  100.0%            LazyCompile: ~cloneDeep /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:11155:23
+      1    1.2%      LazyCompile: ~le /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:462615
+      1  100.0%        LazyCompile: ~Z /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:460815
+      1  100.0%          LazyCompile: ~a /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:458977
+      1  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:500403
+      1    1.2%      LazyCompile: ~join /home/simon/Bureau/SAE_FIMU/API/node_modules/pg-protocol/dist/buffer-writer.js:63:9
+      1  100.0%        LazyCompile: ~flush /home/simon/Bureau/SAE_FIMU/API/node_modules/pg-protocol/dist/buffer-writer.js:72:10
+      1  100.0%          Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/pg-protocol/dist/serializer.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.2%      LazyCompile: ~get includesTrailingLines /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/parse-3997f544.js:40:28
+      1  100.0%        LazyCompile: ~parse /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/parse-3997f544.js:248:8
+      1  100.0%          LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/parse-3997f544.js:1743:66
+      1  100.0%            LazyCompile: ~parse /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/parse-3997f544.js:50:8
+      1    1.2%      LazyCompile: ~createApplication /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/express.js:37:27
+      1  100.0%        Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/dist/server.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~afterShutdown net.js:440:23
+      1    1.2%      LazyCompile: ~addCountries /home/simon/Bureau/SAE_FIMU/API/node_modules/moment-timezone/moment-timezone.js:489:24
+      1  100.0%        LazyCompile: ~loadData /home/simon/Bureau/SAE_FIMU/API/node_modules/moment-timezone/moment-timezone.js:528:20
+      1  100.0%          Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/moment-timezone/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1    1.2%      LazyCompile: ~_unrefTimer net.js:405:52
+      1  100.0%        LazyCompile: ~Socket._writeGeneric net.js:772:42
+      1  100.0%          LazyCompile: ~Socket._writev net.js:804:36
+      1  100.0%            LazyCompile: ~doWrite internal/streams/writable.js:367:17
+      1    1.2%      LazyCompile: ~__toModule /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/errors/index.js:21:18
+      1  100.0%        Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/errors/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1    1.2%      LazyCompile: ~Writable internal/streams/writable.js:218:18
+      1  100.0%        LazyCompile: ~Duplex internal/streams/duplex.js:52:16
+      1  100.0%          LazyCompile: ~Socket net.js:281:16
+      1  100.0%            LazyCompile: ~WriteStream tty.js:85:21
+      1    1.2%      LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:131383
+      1  100.0%        LazyCompile: ~Gt.withMutations /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:104312
+      1  100.0%          LazyCompile: ~Dr /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:131316
+      1  100.0%            LazyCompile: ~Dr.of /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:131872
+      1    1.2%      LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:533513
+      1  100.0%        LazyCompile: ~Ae /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:233812
+      1  100.0%          LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:55348
+      1  100.0%            /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1    1.2%      LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:292214
+      1  100.0%        LazyCompile: ~e.exports /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:307026
+      1  100.0%          LazyCompile: ~setStrong /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:291141
+      1  100.0%            LazyCompile: ~e.exports /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:291750
+      1    1.2%      LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/model.js:737:46
+      1  100.0%        /home/simon/.nvm/versions/node/v14.21.2/bin/node
+      1  100.0%          LazyCompile: ~init /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/model.js:660:14
+      1  100.0%            LazyCompile: ~define /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/sequelize.js:220:9
+      1    1.2%      LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:4959:22
+      1  100.0%        LazyCompile: ~baseForOwn /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:3031:24
+      1  100.0%          Eval: ~runInContext /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:1448:44
+      1  100.0%            Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:9:11
+      1    1.2%      LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:3642:31
+      1  100.0%        LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:4959:22
+      1  100.0%          LazyCompile: ~baseMerge /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:3638:23
+      1  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:13505:40
+      1    1.2%      LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:13657:48
+      1  100.0%        LazyCompile: ~basePickBy /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:3816:24
+      1  100.0%          LazyCompile: ~pickBy /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:13649:20
+      1  100.0%            LazyCompile: ~omitBy /home/simon/Bureau/SAE_FIMU/API/node_modules/lodash/lodash.js:13606:20
+      1    1.2%      LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/cors/lib/index.js:219:57
+      1  100.0%        LazyCompile: ~originCallback /home/simon/Bureau/SAE_FIMU/API/node_modules/cors/lib/index.js:213:39
+      1  100.0%          LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/cors/lib/index.js:204:37
+      1  100.0%            LazyCompile: ~optionsCallback /home/simon/Bureau/SAE_FIMU/API/node_modules/cors/lib/index.js:198:34
+      1    1.2%      LazyCompile: ~99324 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:27844
+      1  100.0%        LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%          LazyCompile: ~49216 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:78211
+      1  100.0%            LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1    1.2%      LazyCompile: ~47250 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:351143
+      1  100.0%        LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1  100.0%          LazyCompile: ~33601 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:363328
+      1  100.0%            LazyCompile: ~n /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-bundle.js:2:922921
+      1    1.2%      LazyCompile: ~44144 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:170307
+      1  100.0%        LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%          LazyCompile: ~14636 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:148328
+      1  100.0%            LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1    1.2%      LazyCompile: ~42830 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:234773
+      1  100.0%        LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1  100.0%          LazyCompile: ~53479 /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:239942
+      1  100.0%            LazyCompile: ~r /home/simon/Bureau/SAE_FIMU/API/node_modules/swagger-ui-dist/swagger-ui-standalone-preset.js:2:245036
+      1    1.2%      LazyCompile: *resolveNodeValue /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/Document-f89a2614.js:1176:26
+      1  100.0%        LazyCompile: *resolveBlockMapItems /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/Document-f89a2614.js:632:30
+      1  100.0%          LazyCompile: ~resolveMap /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/Document-f89a2614.js:533:20
+      1  100.0%            LazyCompile: ~resolveTag /home/simon/Bureau/SAE_FIMU/API/node_modules/yaml/dist/Document-f89a2614.js:1044:20
+      1    1.2%      Eval: ~<anonymous> zlib.js:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1  100.0%          LazyCompile: ~compileForPublicLoader internal/bootstrap/loaders.js:220:25
+      1  100.0%            LazyCompile: ~loadNativeModule internal/modules/cjs/helpers.js:43:26
+      1    1.2%      Eval: ~<anonymous> internal/util/iterable_weak_map.js:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:306:29
+      1  100.0%            Eval: ~<anonymous> internal/source_map/source_map_cache.js:1:1
+      1    1.2%      Eval: ~<anonymous> internal/bootstrap/switches/does_own_process_state.js:1:1
+      1    1.2%      Eval: ~<anonymous> crypto.js:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:273:27
+      1  100.0%          LazyCompile: ~compileForPublicLoader internal/bootstrap/loaders.js:220:25
+      1  100.0%            LazyCompile: ~loadNativeModule internal/modules/cjs/helpers.js:43:26
+      1    1.2%      Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/validator/lib/isMultibyte.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/validator/lib/isISO31661Alpha3.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/validator/lib/isEmpty.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/side-channel/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/errors/instance-error.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/sequelize/lib/errors/connection/invalid-connection-error.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/node_modules/call-bind/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+      1    1.2%      Eval: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/dist/routes/utilisateur.router.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile internal/modules/cjs/loader.js:1039:37
+      1  100.0%          LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:1094:37
+      1  100.0%            LazyCompile: ~Module.load internal/modules/cjs/loader.js:938:33
+
+     62    1.2%  writev@@GLIBC_2.2.5
+     52   83.9%    LazyCompile: *writevGeneric internal/stream_base_commons.js:118:23
+     52  100.0%      LazyCompile: ~Socket._writeGeneric net.js:772:42
+     52  100.0%        LazyCompile: ~Socket._writev net.js:804:36
+     52  100.0%          LazyCompile: ~doWrite internal/streams/writable.js:367:17
+     52  100.0%            LazyCompile: ~clearBuffer internal/streams/writable.js:493:21
+     10   16.1%    LazyCompile: *clearBuffer internal/streams/writable.js:493:21
+     10  100.0%      LazyCompile: *end _http_outgoing.js:795:45
+     10  100.0%        LazyCompile: *send /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:111:25
+     10  100.0%          LazyCompile: ~json /home/simon/Bureau/SAE_FIMU/API/node_modules/express/lib/response.js:250:25
+     10  100.0%            LazyCompile: ~<anonymous> /home/simon/Bureau/SAE_FIMU/API/dist/server.js:84:14
+
