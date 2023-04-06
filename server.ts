@@ -20,13 +20,15 @@ import typeactuRouter from "./routes/typeactu.router";
 import typesceneRouter from "./routes/typescene.router";
 import typestandRouter from "./routes/typestand.router";
 import utilisateurRouter from "./routes/utilisateur.router";
-
+import helmet from "helmet";
 import dotenv from "dotenv";
 dotenv.config();
 
 import cors from "cors";
 
 const app = express();
+app.use(helmet());
+app.disable('x-powered-by');
 app.use(cors({
     origin: [
         'http://localhost:8080',
