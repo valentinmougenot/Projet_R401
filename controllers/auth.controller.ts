@@ -110,5 +110,5 @@ const refreshToken = async (req, res) => {
 export default {
     signup,
     signin,
-    refreshToken
+    refreshToken,
 }

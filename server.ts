@@ -1,11 +1,14 @@
 import express from 'express';
 
+import etag from 'etag';
+import responseCaching from './middleware/responseCaching';
+import passportSetup from './config/passport-setup.config';
+
 import actualiteRouter from "./routes/actualite.router";
 import artisteRouter from './routes/artiste.router';
 import authRouter from './routes/auth.router';
 import concertRouter from './routes/concert.router';
 import categorieRouter from "./routes/categorie.router";
-import etlPipelineRouter from "./routes/etlPipeline.router";
 import genreRouter from "./routes/genre.router";
 import notificationRouter from "./routes/notification.router";
 import paysRouter from "./routes/pays.router";
@@ -13,22 +16,19 @@ import reseauxSociauxRouter from "./routes/reseauxSociaux.router";
 import roleRouter from "./routes/role.router";
 import saisonRouter from "./routes/saison.router";
 import sceneRouter from "./routes/scene.router";
-import scraperRouter from "./routes/scraper.router";
 import serviceRouter from "./routes/service.router";
 import standRouter from "./routes/stand.router";
 import typeactuRouter from "./routes/typeactu.router";
 import typesceneRouter from "./routes/typescene.router";
 import typestandRouter from "./routes/typestand.router";
 import utilisateurRouter from "./routes/utilisateur.router";
-import helmet from "helmet";
+
 import dotenv from "dotenv";
 dotenv.config();
 
 import cors from "cors";
 
 const app = express();
-app.use(helmet());
-app.disable('x-powered-by');
 app.use(cors({
     origin: [
         'http://localhost:8080',
@@ -41,6 +41,7 @@ import bodyParser from "body-parser";
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(passportSetup.initialize())
 
 import swaggerUi from "swagger-ui-express";
 import swaggerJsdoc from "swagger-jsdoc";
@@ -66,12 +67,13 @@ const swaggerOptions = {
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+app.use(responseCaching)
+
 app.use('/actualite', actualiteRouter);
 app.use('/artiste', artisteRouter);
 app.use('/auth', authRouter);
 app.use('/categorie', categorieRouter);
 app.use('/concert', concertRouter);
-app.use('/etl-pipeline', etlPipelineRouter);
 app.use('/genre', genreRouter);
 app.use('/notification', notificationRouter);
 app.use('/pays', paysRouter);
@@ -79,7 +81,6 @@ app.use('/reseauxsociaux', reseauxSociauxRouter);
 app.use('/role', roleRouter);
 app.use('/saison', saisonRouter);
 app.use('/scene', sceneRouter);
-app.use('/scraper', scraperRouter);
 app.use('/service', serviceRouter);
 app.use('/stand', standRouter);
 app.use('/typeactu', typeactuRouter);
