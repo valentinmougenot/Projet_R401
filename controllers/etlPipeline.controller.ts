@@ -63,13 +63,11 @@ export const loadData = async (req: Request, res: Response) => {
 }
 
 const getIdPaysByName = async (name: string) => {
-    console.log(name);
     const rep = await dbCommon.pays.findOne({
         where: {
             libelle: name
         }
     });
-    console.log(rep);
     if (rep) {
         return rep.id;
     }
