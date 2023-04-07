@@ -7,6 +7,7 @@ import concertRouter from './routes/concert.router';
 import categorieRouter from "./routes/categorie.router";
 import etlPipelineRouter from "./routes/etlPipeline.router";
 import genreRouter from "./routes/genre.router";
+import imageRouter from "./routes/image.router";
 import notificationRouter from "./routes/notification.router";
 import paysRouter from "./routes/pays.router";
 import reseauxSociauxRouter from "./routes/reseauxSociaux.router";
@@ -20,7 +21,9 @@ import typeactuRouter from "./routes/typeactu.router";
 import typesceneRouter from "./routes/typescene.router";
 import typestandRouter from "./routes/typestand.router";
 import utilisateurRouter from "./routes/utilisateur.router";
+import mongoose from "mongoose";
 import helmet from "helmet";
+
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -36,6 +39,12 @@ app.use(cors({
     ],
     credentials: true
 }));
+
+const MONGO_URI = "mongodb://localhost:27017/images_r401";
+mongoose.connect(MONGO_URI);
+mongoose.connection.once("open", () => {
+    console.log("Connecté à la base de données MongoDB.");
+});
 
 import bodyParser from "body-parser";
 
@@ -73,6 +82,7 @@ app.use('/categorie', categorieRouter);
 app.use('/concert', concertRouter);
 app.use('/etl-pipeline', etlPipelineRouter);
 app.use('/genre', genreRouter);
+app.use('/image', imageRouter);
 app.use('/notification', notificationRouter);
 app.use('/pays', paysRouter);
 app.use('/reseauxsociaux', reseauxSociauxRouter);
