@@ -22,6 +22,7 @@ import typesceneRouter from "./routes/typescene.router";
 import typestandRouter from "./routes/typestand.router";
 import utilisateurRouter from "./routes/utilisateur.router";
 import mongoose from "mongoose";
+import helmet from "helmet";
 
 import dotenv from "dotenv";
 dotenv.config();
@@ -29,6 +30,8 @@ dotenv.config();
 import cors from "cors";
 
 const app = express();
+app.use(helmet());
+app.disable('x-powered-by');
 app.use(cors({
     origin: [
         'http://localhost:8080',

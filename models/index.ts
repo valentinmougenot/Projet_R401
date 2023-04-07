@@ -55,7 +55,8 @@ async function createCommonSchema() {
             min: dbConfig.pool.min,
             acquire: dbConfig.pool.acquire,
             idle: dbConfig.pool.idle
-        }
+        },
+        logging: false
     });
 
     await createSchemaIfNotExist(sequelizeCommon, "common");
@@ -114,7 +115,8 @@ async function createPreviousSchema() {
             min: dbConfig.pool.min,
             acquire: dbConfig.pool.acquire,
             idle: dbConfig.pool.idle
-        }
+        },
+        logging: false
     });
 
     await createSchemaIfNotExist(sequelizePrevious, "previous");
@@ -167,7 +169,8 @@ async function syncModelsSchema(schema: string) {
             min: dbConfig.pool.min,
             acquire: dbConfig.pool.acquire,
             idle: dbConfig.pool.idle
-        }
+        },
+        logging: false
     });
 
     await createSchemaIfNotExist(sequelize, schema);
