@@ -32,12 +32,11 @@ import cors from "cors";
 const app = express();
 app.use(helmet());
 app.disable('x-powered-by');
+
 app.use(cors({
-    origin: [
-        'http://localhost:8080',
-        'https://localhost:8080'
-    ],
-    credentials: true
+    origin: '*',
+    credentials: true,
+    allowedHeaders: ['Content-Type', 'Authorization', 'x-access-token']
 }));
 
 const MONGO_URI = "mongodb://localhost:27017/images_r401";
