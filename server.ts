@@ -1,5 +1,6 @@
 import express from 'express';
 
+import {authJwt} from "./middleware"
 import actualiteRouter from "./routes/actualite.router";
 import artisteRouter from './routes/artiste.router';
 import authRouter from './routes/auth.router';
@@ -21,14 +22,30 @@ import typesceneRouter from "./routes/typescene.router";
 import typestandRouter from "./routes/typestand.router";
 import utilisateurRouter from "./routes/utilisateur.router";
 import helmet from "helmet";
+import WebSocket from "ws";
 import dotenv from "dotenv";
 dotenv.config();
 
 import cors from "cors";
 
 const app = express();
-app.use(helmet());
+// const http = require('http');
+// const server = http.createServer(app);
+const wss = new WebSocket.Server({ port: 4325 })
+// app.use((req, res, next) => {
+//     res.setHeader("Content-Security-Policy", "connect-src ws://localhost:3000");
+//     next();
+// });
+
+app.use(helmet({
+    contentSecurityPolicy: {
+        directives: {
+            connectSrc: ["'self'", "'unsafe-inline'", "ws:"]
+        }
+    }
+}));
 app.disable('x-powered-by');
+
 app.use(cors({
     origin: [
         'http://localhost:8080',
@@ -36,6 +53,22 @@ app.use(cors({
     ],
     credentials: true
 }));
+
+wss.on('connection', (ws, req) => {
+
+    console.log(`Client test connected`);
+    ws.send(`Welcome, test !`);
+
+    ws.on('message', (message) => {
+        console.log(`Received message from test => ${message}`);
+        ws.send(`You sent => ${message}`);
+    });
+
+    ws.on('close', () => {
+        console.log(`Client test disconnected`);
+    });
+
+});
 
 import bodyParser from "body-parser";
 
@@ -100,6 +133,6 @@ app.use('*', (req, res) => {
     });
 });
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server started at port ${process.env.PORT}`);
+app.listen(3000, () => {
+    console.log(`Server started at port ${3000}`);
 });
