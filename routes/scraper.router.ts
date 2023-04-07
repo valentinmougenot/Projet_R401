@@ -1,7 +1,7 @@
 import {Router} from "express";
 const router = Router();
 
-import {scrap} from "../controllers/scrapper.controller";
+import {scrap} from "../controllers/scraper.controller";
 
 router.post("/scrap-data", scrap);
 

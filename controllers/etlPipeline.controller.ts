@@ -41,7 +41,6 @@ export const loadData = async (req: Request, res: Response) => {
 
         for (let i = 0; i < response.length; i++) {
             const line = response[i];
-            console.log(line)
             for (let j = 0; j < line.pays.length; j++) {
                 line.pays[j] = await getIdPaysByName(line.pays[j].trim());
             }
@@ -64,13 +63,11 @@ export const loadData = async (req: Request, res: Response) => {
 }
 
 const getIdPaysByName = async (name: string) => {
-    console.log(name);
     const rep = await dbCommon.pays.findOne({
         where: {
             libelle: name
         }
     });
-    console.log(rep);
     if (rep) {
         return rep.id;
     }

@@ -1,6 +1,5 @@
 import express from 'express';
 
-import {authJwt} from "./middleware"
 import actualiteRouter from "./routes/actualite.router";
 import artisteRouter from './routes/artiste.router';
 import authRouter from './routes/auth.router';
@@ -8,6 +7,7 @@ import concertRouter from './routes/concert.router';
 import categorieRouter from "./routes/categorie.router";
 import etlPipelineRouter from "./routes/etlPipeline.router";
 import genreRouter from "./routes/genre.router";
+import imageRouter from "./routes/image.router";
 import notificationRouter from "./routes/notification.router";
 import paysRouter from "./routes/pays.router";
 import reseauxSociauxRouter from "./routes/reseauxSociaux.router";
@@ -21,6 +21,7 @@ import typeactuRouter from "./routes/typeactu.router";
 import typesceneRouter from "./routes/typescene.router";
 import typestandRouter from "./routes/typestand.router";
 import utilisateurRouter from "./routes/utilisateur.router";
+import mongoose from "mongoose";
 import helmet from "helmet";
 import WebSocket from "ws";
 import dotenv from "dotenv";
@@ -47,11 +48,9 @@ app.use(helmet({
 app.disable('x-powered-by');
 
 app.use(cors({
-    origin: [
-        'http://localhost:8080',
-        'https://localhost:8080'
-    ],
-    credentials: true
+    origin: '*',
+    credentials: true,
+    allowedHeaders: ['Content-Type', 'Authorization', 'x-access-token']
 }));
 
 wss.on('connection', (ws, req) => {
@@ -67,7 +66,12 @@ wss.on('connection', (ws, req) => {
     ws.on('close', () => {
         console.log(`Client test disconnected`);
     });
+});
 
+const MONGO_URI = "mongodb://localhost:27017/images_r401";
+mongoose.connect(MONGO_URI);
+mongoose.connection.once("open", () => {
+    console.log("Connecté à la base de données MongoDB.");
 });
 
 import bodyParser from "body-parser";
@@ -106,6 +110,7 @@ app.use('/categorie', categorieRouter);
 app.use('/concert', concertRouter);
 app.use('/etl-pipeline', etlPipelineRouter);
 app.use('/genre', genreRouter);
+app.use('/image', imageRouter);
 app.use('/notification', notificationRouter);
 app.use('/pays', paysRouter);
 app.use('/reseauxsociaux', reseauxSociauxRouter);
@@ -133,6 +138,6 @@ app.use('*', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log(`Server started at port ${3000}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Server started at port ${process.env.PORT}`);
 });
