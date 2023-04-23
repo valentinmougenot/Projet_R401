@@ -13,7 +13,6 @@ router.get(
 );
 
 router.get('/google/callback', passport.authenticate('google'), (req, res) => {
-    // Gérer la réponse de réussite de l'authentification ici
     res.redirect('/home');
 });
 
@@ -23,7 +22,6 @@ router.get(
 );
 
 router.get('/facebook/callback', passport.authenticate('facebook'), (req, res) => {
-    // Gérer la réponse de réussite de l'authentification ici
     res.redirect('/home');
 });
 
