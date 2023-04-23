@@ -8,10 +8,6 @@ export const scraperObject = {
             const tables = document.querySelectorAll('table');
             const table3 = tables[2];
 
-            if (!table3) {
-                return [];
-            }
-
             const rows = table3.querySelectorAll('tr');
 
             return Array.from(rows, (row) => {

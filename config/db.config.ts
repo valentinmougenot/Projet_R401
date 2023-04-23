@@ -3,8 +3,8 @@ dotenv.config();
 
 const dbConfig = {
     HOST: "localhost",
-    USER: "postgres",
-    PASSWORD: "2609",
+    USER: "valentinmougenot",
+    PASSWORD: "",
     DB: "fimu",
     dialect: "postgres",
     pool: {

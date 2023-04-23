@@ -9,7 +9,7 @@ const checkDuplicateUsername = async (req, res, next) => {
 
     if (utilisateur) {
         res.status(400).send({
-            message: "Echoué ! Email déjà utilisé"
+            message: "Echoué ! Nom d'utilisateur déjà utilisé"
         });
         return;
     }
