@@ -253,7 +253,7 @@ async function insertData() {
     await dbCurrent.stands.bulkCreate(standData.current);
     await dbNext.stands.bulkCreate(standData.next);
 
-    /*const artistesCurrent = await dbCurrent.artistes.findAll();
+    const artistesCurrent = await dbCurrent.artistes.findAll();
     const genres = await dbCommon.genres.findAll();
     const pays = await dbCommon.pays.findAll();
     const reseauxSociaux = await dbCommon.reseauxSociaux.findAll();
@@ -365,7 +365,7 @@ async function insertData() {
                 serviceIdx = 0;
             }
         }
-    }*/
+    }
 }
 
 let dbCommon, dbCurrent, dbNext, dbPrevious;
@@ -387,7 +387,7 @@ createCommonSchema()
         console.log("Done !");
     })
     .then(async () => {
-        //await insertData();
+        // await insertData();
     });
 
 export { dbCommon, dbCurrent, dbNext, dbPrevious };

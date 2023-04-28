@@ -7,6 +7,6 @@ export default {
     secret: secret,
     jwtExpiration: 900,
     jwtRefreshExpiration: 86400,
-    cookie: {sameSite: true}
+    cookie: { sameSite: true }
 }
 

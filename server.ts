@@ -1,5 +1,9 @@
 import express from 'express';
 
+import etag from 'etag';
+import responseCaching from './middleware/responseCaching';
+import passportSetup from './config/passport-setup.config';
+
 import actualiteRouter from "./routes/actualite.router";
 import artisteRouter from './routes/artiste.router';
 import authRouter from './routes/auth.router';
@@ -48,7 +52,8 @@ mongoose.connection.once("open", () => {
 import bodyParser from "body-parser";
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(passportSetup.initialize())
 
 import swaggerUi from "swagger-ui-express";
 import swaggerJsdoc from "swagger-jsdoc";
@@ -73,6 +78,8 @@ const swaggerOptions = {
 
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
+app.use(responseCaching)
 
 app.use('/actualite', actualiteRouter);
 app.use('/artiste', artisteRouter);
