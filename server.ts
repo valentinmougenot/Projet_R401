@@ -27,14 +27,28 @@ import typestandRouter from "./routes/typestand.router";
 import utilisateurRouter from "./routes/utilisateur.router";
 import mongoose from "mongoose";
 import helmet from "helmet";
-
+import WebSocket from "ws";
 import dotenv from "dotenv";
 dotenv.config();
 
 import cors from "cors";
 
 const app = express();
-app.use(helmet());
+// const http = require('http');
+// const server = http.createServer(app);
+const wss = new WebSocket.Server({ port: 4325 })
+// app.use((req, res, next) => {
+//     res.setHeader("Content-Security-Policy", "connect-src ws://localhost:3000");
+//     next();
+// });
+
+app.use(helmet({
+    contentSecurityPolicy: {
+        directives: {
+            connectSrc: ["'self'", "'unsafe-inline'", "ws:"]
+        }
+    }
+}));
 app.disable('x-powered-by');
 
 app.use(cors({
@@ -42,6 +56,21 @@ app.use(cors({
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization', 'x-access-token']
 }));
+
+wss.on('connection', (ws, req) => {
+
+    console.log(`Client test connected`);
+    ws.send(`Welcome, test !`);
+
+    ws.on('message', (message) => {
+        console.log(`Received message from test => ${message}`);
+        ws.send(`You sent => ${message}`);
+    });
+
+    ws.on('close', () => {
+        console.log(`Client test disconnected`);
+    });
+});
 
 const MONGO_URI = "mongodb://localhost:27017/images_r401";
 mongoose.connect(MONGO_URI);
